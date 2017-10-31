@@ -9,13 +9,15 @@
     --thread-bg-sticky2: #573521;
     --text-color: #DADADA;
     --text-dim-color: #7d7d7d;   
+    
+    /* Backgrounds */
+    --darker: #1b1b1b;
 }
 
 /*===== General =====*/
 
 html {
-    background-color: #363636;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(0, 0, 0, 0.05) 20px, rgba(0, 0, 0, 0.05) 40px);
+    background-color: var(--darker);
 }
 body {
     color: var(--text-color);
