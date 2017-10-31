@@ -1,104 +1,181 @@
-:root{
-    --darker: #1b1b1b;
-    --dark: #252525;
-    --mid: #323232;
-    
-    --accentdark: #303030;
-    --accentbright: #404040;
-    
-    --textbright: #ccc;
-    --textdark: #a9a9a9;
-    
-    --linkbright: #00ccff;
+:root {
+    --accent: #2196f3;
+    --accent-hover: #003a69;
+    --accent-text: #63ffff;
+    --thread-bg: #181818;
+    --thread-bg2: #1d1d1d;
+    --thread-bg-read: #000;
+    --thread-bg-sticky: #572121;
+    --thread-bg-sticky2: #573521;
+    --text-color: #DADADA;
+    --text-dim-color: #7d7d7d;
 }
+/*===== General =====*/
 
-/* Common */
+html {
+    background-color: #363636;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(0, 0, 0, 0.05) 20px, rgba(0, 0, 0, 0.05) 40px);
+}
+body {
+    color: var(--text-color);
+}
+a {
+    color: var(--text-color);
+}
+a:hover {
+    color: var(--accent);
+}
+strong {
+    color: #ececec;
+}
+.button.is-primary {
+    background-color: var(--accent);
+}
+.button.is-primary:hover,
+.button.is-primary.is-hovered {
+    background-color: var(--accent-hover);
+}
+.label {
+    color: var(--text-color);
+}
+.tooltip.is-primary:after {
+    background-color: var(--accent);
+}
+.tooltip.is-top.is-primary:before {
+    border-top: 6px solid var(--accent);
+}
+/*===== Main Forum =====*/
 
-html, #forum{
-    background: var(--darker);
-    color: var(--textbright);
+.forumcategoryblock .forumcategoryheader .categorytitle {
+    color: var(--text-dim-color) !important;
 }
+.navbar.is-primary .navbar-brand > a.navbar-item:hover,
+.navbar.is-primary .navbar-brand > a.navbar-item.is-active,
+.navbar.is-primary .navbar-brand .navbar-link:hover,
+.navbar.is-primary .navbar-brand .navbar-link.is-active {
+    background-color: var(--accent);
+}
+.navbar.is-primary .navbar-brand > a.navbar-item:hover,
+.navbar.is-primary .navbar-brand .navbar-link:hover {
+    background-color: var(--accent) !important;
+}
+.user-moderator a {
+    color: #4caf50 !important;
+}
+#content {
+    background-image: none;
+}
+/*===== SubForum Main Page =====*/
 
-/* Navbar */
-.navbar.is-primary{
-	background: var(--accentdark);
+body.page-forum .forumhead ul .content .title a {
+    color: var(--text-color);
 }
+body.page-forum .forumhead ul .content .subtitle {
+    color: var(--text-color);
+}
+.pagnation.threadpagnation,
+.pagnation.postpagnation {
+    background-color: var(--thread-bg);
+}
+/*Page Indicator*/
 
-/* Pagination */
-.pagnation.threadpagnation, .pagnation.postpagnation{
-    background-color: var(--accentdark)
+.pagnation.threadpagnation A.page.is-active,
+.pagnation.postpagnation A.page.is-active,
+.pagnation.threadpagnation A.page.is-active:hover,
+.pagnation.postpagnation A.page.is-active:hover {
+    background-color: var(--accent);
 }
-.pagnation.threadpagnation A.page.is-active, .pagnation.postpagnation A.page.is-active{
-    background-color: var(--accentbright);
+.pagnation.threadpagnation A.page:hover,
+.pagnation.postpagnation A.page:hover {
+    background-color: var(--accent-hover);
 }
+body.page-forum .forumhead ul .content .subtitle a {
+    color: var(--text-dim-color)
+}
+/*===== Threads =====*/
+/*Normal threads*/
 
-/* Usernames */
-.username a{
-    color: var(--linkbright);
+body.page-forum .forumpanel {
+    background-color: var(--thread-bg);
 }
+body.page-forum .threadlistsection .threadblock:nth-child(even) {
+    background-color: var(--thread-bg2);
+}
+/*Viewed threads*/
 
-/* Home */
+body.page-forum ul.threadblock.forumpanel.has-seen {
+    background-color: var(--thread-bg-read);
+}
+body.page-forum ul.threadblock.forumpanel.has-seen.has-new-posts {
+    background-color: var(--thread-bg);
+}
+body.page-forum ul.threadblock:nth-child(even).forumpanel.has-seen.has-new-posts {
+    background-color: var(--thread-bg2);
+}
+/*Stickied threads*/
 
-/* Forum title */
-body.page-forum .forumcategoryblock .forumcategoryheader .categorytitle{
-    color: var(--textbright)!important;
-}
-
-/* Subforums */
-body.page-forum .forumchildren .forumpanel{
-    background: var(--dark);
-}
-/* Subforum title and subtitle */
-body.page-forum .forumchildren .forumpanel .forumtitle a {
- 	color: var(--textbright);   
-}
-body.page-forum .forumchildren .forumpanel .forumsubtitle {
-    color: var(--textdark);
-}
-
-/* Thread list */
-
-/* Subforum name */
-body.page-forum .forumhead ul .content .title a{
-    color: var(--textbright);
-}
-
-body.page-forum .forumhead ul .content .subtitle{
-	color: var(--textdark);
-    margin-left: 0;
-}
-
-/* Thread tweaks: title color and not bold */
-body.page-forum .threadlistsection .threadmain > div > a > strong{
-    font-weight: 400;
-    color: var(--textbright);
-}
-
-/* Thread colors (odd and even) */
-body.page-forum .threadlistsection .threadblock:nth-child(even){
-    background: var(--accentbright);
-}
-body.page-forum .threadlistsection .threadblock:nth-child(odd){
-    background: var(--accentdark);
-}
-
-/* Last post on threadlist */
-li.threadlastpost > div > a{
-    color: var(--textdark);
-}
-
-/* Stickied threads */
 body.page-forum .threadlistsection .threadblock.is-sticky {
-    background-color: #ff3f3f;
-	box-shadow: inset 0px -2px 0px 0px #af0f0f;
-    color: var(--dark);
+    background-color: var(--thread-bg-sticky)!important;
 }
 body.page-forum .threadlistsection .threadblock.is-sticky:nth-child(even) {
-    background-color: #ef4949;
-	box-shadow: inset 0px -2px 0px 0px #af0f0f;
-    color: var(--dark);
+    background-color: var(--thread-bg-sticky2)!important;
 }
-body.page-forum .threadlistsection .threadblock.is-sticky .threadmain > div > a > strong{
-    color: var(--dark);
-    font-weight: 600;
+body.page-forum .threadlistsection .threadblock.is-sticky A {
+    color: var(--text-color);
+}
+body.page-forum .threadlistsection .threadblock.is-sticky {
+    color: var(--text-dim-color);
+}
+/*New Post indicator*/
+
+body.page-forum .threadlistsection .threadblock .threadmain a.newposts {
+    background-color: var(--accent);
+    color: var(--accent-text);
+}
+body.page-forum .threadlistsection .threadblock .threadmain a.newposts:hover {
+    background-color: var(--accent-hover);
+}
+/*Post head*/
+
+body.page-forum .threadviewsection .postblock .posthead {
+    color: var(--text-dim-color);
+}
+body.page-forum .threadviewsection .postblock .posthead a,
+body.page-forum .threadviewsection .postblock .posthead strong {
+    color: var(--text-dim-color);
+}
+/*new posts*/
+
+body.page-forum .threadviewsection .postblock > li.postuser {
+    background-color: rgba(25, 49, 68, 0.5);
+    border-left: 2px var(--accent) solid;
+}
+body.page-forum .threadviewsection .postblock-read > li.postuser {
+    background-color: rgba(158, 158, 158, 0.11);
+    border-left: 2px var(--thread-bg) solid;
+}
+body.page-forum .threadviewsection .postblock-own > li.postuser {
+    background-color: rgba(134, 130, 0, 0.11);
+    border-left: 2px var(--accent) solid;
+}
+body.page-forum .threadviewsection .postblock-own.postblock-read > li.postuser {
+    background-color: rgba(134, 130, 0, 0.11);
+    border-left: 2px #868200 solid;
+}
+body.page-forum .threadviewsection .postblock-reply > li.postuser {
+    background-color: rgba(158, 158, 158, 0.11);
+    border: none;
+}
+/*===== Navbar =====*/
+
+.navbar.is-primary {
+    background-color: var(--thread-bg);
+}
+.navbar-brand > a.navbar-item:hover {
+    background-color: var(--accent);
+}
+/*===== Footer =====*/
+
+.footer {
+    background-color: var(--thread-bg);
 }
