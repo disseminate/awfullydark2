@@ -16,8 +16,8 @@
 
 /*===== General =====*/
 
-html {
-    background-color: var(--darker);
+html, #forum{
+    background: var(--darker);
 }
 body {
     color: var(--text-color);
