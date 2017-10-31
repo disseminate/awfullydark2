@@ -2,14 +2,15 @@
     --accent: #2196f3;
     --accent-hover: #003a69;
     --accent-text: #63ffff;
-    --thread-bg: #181818;
-    --thread-bg2: #1d1d1d;
-    --thread-bg-read: #000;
+    --thread-bg: #303030;
+    --thread-bg2: #404040;
+    --thread-bg-read: #101010;
     --thread-bg-sticky: #572121;
     --thread-bg-sticky2: #573521;
     --text-color: #DADADA;
-    --text-dim-color: #7d7d7d;
+    --text-dim-color: #7d7d7d;   
 }
+
 /*===== General =====*/
 
 html {
