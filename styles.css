@@ -1,0 +1,104 @@
+:root{
+    --darker: #1b1b1b;
+    --dark: #252525;
+    --mid: #323232;
+    
+    --accentdark: #303030;
+    --accentbright: #404040;
+    
+    --textbright: #ccc;
+    --textdark: #a9a9a9;
+    
+    --linkbright: #00ccff;
+}
+
+/* Common */
+
+html, #forum{
+    background: var(--darker);
+    color: var(--textbright);
+}
+
+/* Navbar */
+.navbar.is-primary{
+	background: var(--accentdark);
+}
+
+/* Pagination */
+.pagnation.threadpagnation, .pagnation.postpagnation{
+    background-color: var(--accentdark)
+}
+.pagnation.threadpagnation A.page.is-active, .pagnation.postpagnation A.page.is-active{
+    background-color: var(--accentbright);
+}
+
+/* Usernames */
+.username a{
+    color: var(--linkbright);
+}
+
+/* Home */
+
+/* Forum title */
+body.page-forum .forumcategoryblock .forumcategoryheader .categorytitle{
+    color: var(--textbright)!important;
+}
+
+/* Subforums */
+body.page-forum .forumchildren .forumpanel{
+    background: var(--dark);
+}
+/* Subforum title and subtitle */
+body.page-forum .forumchildren .forumpanel .forumtitle a {
+ 	color: var(--textbright);   
+}
+body.page-forum .forumchildren .forumpanel .forumsubtitle {
+    color: var(--textdark);
+}
+
+/* Thread list */
+
+/* Subforum name */
+body.page-forum .forumhead ul .content .title a{
+    color: var(--textbright);
+}
+
+body.page-forum .forumhead ul .content .subtitle{
+	color: var(--textdark);
+    margin-left: 0;
+}
+
+/* Thread tweaks: title color and not bold */
+body.page-forum .threadlistsection .threadmain > div > a > strong{
+    font-weight: 400;
+    color: var(--textbright);
+}
+
+/* Thread colors (odd and even) */
+body.page-forum .threadlistsection .threadblock:nth-child(even){
+    background: var(--accentbright);
+}
+body.page-forum .threadlistsection .threadblock:nth-child(odd){
+    background: var(--accentdark);
+}
+
+/* Last post on threadlist */
+li.threadlastpost > div > a{
+    color: var(--textdark);
+}
+
+/* Stickied threads */
+body.page-forum .threadlistsection .threadblock.is-sticky {
+    background-color: #ff3f3f;
+	box-shadow: inset 0px -2px 0px 0px #af0f0f;
+    color: var(--dark);
+}
+body.page-forum .threadlistsection .threadblock.is-sticky:nth-child(even) {
+    background-color: #ef4949;
+	box-shadow: inset 0px -2px 0px 0px #af0f0f;
+    color: var(--dark);
+}
+body.page-forum .threadlistsection .threadblock.is-sticky .threadmain > div > a > strong{
+    color: var(--dark);
+    font-weight: 600;
+}
