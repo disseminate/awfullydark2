@@ -3,11 +3,11 @@
     --accent-hover: #003a69;
     --accent-text: #63ffff;
     --thread-bg: #303030;
-    --thread-bg2: #404040;
-    --thread-bg-read: #101010;
+    --thread-bg2: #303030;
+    --thread-bg-read: #1c1c1c;
     --thread-bg-sticky: #572121;
     --thread-bg-sticky2: #573521;
-    --text-color: #DADADA;
+    --text-color: #dadada;
     --text-dim-color: #7d7d7d;
     /* Backgrounds */
     --darker: #1b1b1b;
@@ -89,7 +89,7 @@ strong {
 /*alert button */
 
 .navbar-alerts .alert-button {
-    color: var(--accent)
+    color: var(--accent);
 }
 
 
@@ -102,7 +102,7 @@ strong {
 .dropdown-content .dropdown .dropdown-menu .has-link a,
 .dropdown .dropdown-menu .has-link .dropdown-content a {
     background-color: var(--thread-bg2);
-    color: var(--text-dim-color)!important;
+    color: var(--text-dim-color) !important;
 }
 
 .dropdown-content .dropdown-item:hover,
@@ -111,7 +111,7 @@ strong {
 .dropdown-content a.dropdown-item:hover,
 .dropdown-content .dropdown .dropdown-menu .has-link a:hover,
 .dropdown .dropdown-menu .has-link .dropdown-content a:hover {
-    color: var(--text-color)!important;
+    color: var(--text-color) !important;
 }
 
 
@@ -133,20 +133,20 @@ body.page-forum .forumhead ul .content .subtitle {
 
 /*Page Indicator*/
 
-.pagnation.threadpagnation A.page.is-active,
-.pagnation.postpagnation A.page.is-active,
-.pagnation.threadpagnation A.page.is-active:hover,
-.pagnation.postpagnation A.page.is-active:hover {
+.pagnation.threadpagnation a.page.is-active,
+.pagnation.postpagnation a.page.is-active,
+.pagnation.threadpagnation a.page.is-active:hover,
+.pagnation.postpagnation a.page.is-active:hover {
     background-color: var(--accent);
 }
 
-.pagnation.threadpagnation A.page:hover,
-.pagnation.postpagnation A.page:hover {
+.pagnation.threadpagnation a.page:hover,
+.pagnation.postpagnation a.page:hover {
     background-color: var(--accent-hover);
 }
 
 body.page-forum .forumhead ul .content .subtitle a {
-    color: var(--text-dim-color)
+    color: var(--text-dim-color);
 }
 
 
@@ -182,14 +182,14 @@ body.page-forum ul.threadblock:nth-child(even).forumpanel.has-seen.has-new-posts
 /*Stickied threads*/
 
 body.page-forum .threadlistsection .threadblock.is-sticky {
-    background-color: var(--thread-bg-sticky)!important;
+    background-color: var(--thread-bg-sticky) !important;
 }
 
 body.page-forum .threadlistsection .threadblock.is-sticky:nth-child(even) {
-    background-color: var(--thread-bg-sticky2)!important;
+    background-color: var(--thread-bg-sticky2) !important;
 }
 
-body.page-forum .threadlistsection .threadblock.is-sticky A {
+body.page-forum .threadlistsection .threadblock.is-sticky a {
     color: var(--text-color);
 }
 
