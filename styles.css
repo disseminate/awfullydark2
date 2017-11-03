@@ -8,15 +8,15 @@
     --thread-bg-sticky: #572121;
     --thread-bg-sticky2: #573521;
     --text-color: #DADADA;
-    --text-dim-color: #7d7d7d;   
-    
+    --text-dim-color: #7d7d7d;
     /* Backgrounds */
+    
     --darker: #1b1b1b;
 }
-
 /*===== General =====*/
 
-html, #forum{
+html,
+#forum {
     background: var(--darker);
 }
 body {
@@ -67,6 +67,30 @@ strong {
 }
 #content {
     background-image: none;
+}
+/*alert button */
+
+.navbar-alerts .alert-button {
+    color: var(--accent)
+}
+/*alert window*/
+
+.dropdown-content .dropdown-item,
+.dropdown-content .dropdown .dropdown-menu .has-link a,
+.dropdown .dropdown-menu .has-link .dropdown-content a,
+.dropdown-content a.dropdown-item,
+.dropdown-content .dropdown .dropdown-menu .has-link a,
+.dropdown .dropdown-menu .has-link .dropdown-content a {
+    background-color: var(--thread-bg2);
+    color: var(--text-dim-color)!important;
+}
+.dropdown-content .dropdown-item:hover,
+.dropdown-content .dropdown .dropdown-menu .has-link a:hover,
+.dropdown .dropdown-menu .has-link .dropdown-content a:hover,
+.dropdown-content a.dropdown-item:hover,
+.dropdown-content .dropdown .dropdown-menu .has-link a:hover,
+.dropdown .dropdown-menu .has-link .dropdown-content a:hover {
+    color: var(--text-color)!important;
 }
 /*===== SubForum Main Page =====*/
 
@@ -168,6 +192,11 @@ body.page-forum .threadviewsection .postblock-own.postblock-read > li.postuser {
 body.page-forum .threadviewsection .postblock-reply > li.postuser {
     background-color: rgba(158, 158, 158, 0.11);
     border: none;
+}
+/*in thread title*/
+
+.title {
+    color: var(--text-color);
 }
 /*===== Navbar =====*/
 
