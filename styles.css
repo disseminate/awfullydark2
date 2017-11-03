@@ -10,69 +10,89 @@
     --text-color: #DADADA;
     --text-dim-color: #7d7d7d;
     /* Backgrounds */
-    
     --darker: #1b1b1b;
 }
+
+
 /*===== General =====*/
 
 html,
 #forum {
     background: var(--darker);
 }
+
 body {
     color: var(--text-color);
 }
+
 a {
     color: var(--text-color);
 }
+
 a:hover {
     color: var(--accent);
 }
+
 strong {
     color: #ececec;
 }
+
 .button.is-primary {
     background-color: var(--accent);
 }
+
 .button.is-primary:hover,
 .button.is-primary.is-hovered {
     background-color: var(--accent-hover);
 }
+
 .label {
     color: var(--text-color);
 }
+
 .tooltip.is-primary:after {
     background-color: var(--accent);
 }
+
 .tooltip.is-top.is-primary:before {
     border-top: 6px solid var(--accent);
 }
+
+
 /*===== Main Forum =====*/
 
 .forumcategoryblock .forumcategoryheader .categorytitle {
     color: var(--text-dim-color) !important;
 }
-.navbar.is-primary .navbar-brand > a.navbar-item:hover,
-.navbar.is-primary .navbar-brand > a.navbar-item.is-active,
+
+.navbar.is-primary .navbar-brand>a.navbar-item:hover,
+.navbar.is-primary .navbar-brand>a.navbar-item.is-active,
 .navbar.is-primary .navbar-brand .navbar-link:hover,
 .navbar.is-primary .navbar-brand .navbar-link.is-active {
     background-color: var(--accent);
 }
-.navbar.is-primary .navbar-brand > a.navbar-item:hover,
+
+.navbar.is-primary .navbar-brand>a.navbar-item:hover,
 .navbar.is-primary .navbar-brand .navbar-link:hover {
     background-color: var(--accent) !important;
 }
+
 .user-moderator a {
     color: #4caf50 !important;
 }
+
 #content {
     background-image: none;
 }
+
+
 /*alert button */
 
 .navbar-alerts .alert-button {
     color: var(--accent)
 }
+
+
 /*alert window*/
 
 .dropdown-content .dropdown-item,
@@ -84,6 +104,7 @@ strong {
     background-color: var(--thread-bg2);
     color: var(--text-dim-color)!important;
 }
+
 .dropdown-content .dropdown-item:hover,
 .dropdown-content .dropdown .dropdown-menu .has-link a:hover,
 .dropdown .dropdown-menu .has-link .dropdown-content a:hover,
@@ -92,18 +113,24 @@ strong {
 .dropdown .dropdown-menu .has-link .dropdown-content a:hover {
     color: var(--text-color)!important;
 }
+
+
 /*===== SubForum Main Page =====*/
 
 body.page-forum .forumhead ul .content .title a {
     color: var(--text-color);
 }
+
 body.page-forum .forumhead ul .content .subtitle {
     color: var(--text-color);
 }
+
 .pagnation.threadpagnation,
 .pagnation.postpagnation {
     background-color: var(--thread-bg);
 }
+
+
 /*Page Indicator*/
 
 .pagnation.threadpagnation A.page.is-active,
@@ -112,100 +139,135 @@ body.page-forum .forumhead ul .content .subtitle {
 .pagnation.postpagnation A.page.is-active:hover {
     background-color: var(--accent);
 }
+
 .pagnation.threadpagnation A.page:hover,
 .pagnation.postpagnation A.page:hover {
     background-color: var(--accent-hover);
 }
+
 body.page-forum .forumhead ul .content .subtitle a {
     color: var(--text-dim-color)
 }
+
+
 /*===== Threads =====*/
+
+
 /*Normal threads*/
 
 body.page-forum .forumpanel {
     background-color: var(--thread-bg);
 }
+
 body.page-forum .threadlistsection .threadblock:nth-child(even) {
     background-color: var(--thread-bg2);
 }
+
+
 /*Viewed threads*/
 
 body.page-forum ul.threadblock.forumpanel.has-seen {
     background-color: var(--thread-bg-read);
 }
+
 body.page-forum ul.threadblock.forumpanel.has-seen.has-new-posts {
     background-color: var(--thread-bg);
 }
+
 body.page-forum ul.threadblock:nth-child(even).forumpanel.has-seen.has-new-posts {
     background-color: var(--thread-bg2);
 }
+
+
 /*Stickied threads*/
 
 body.page-forum .threadlistsection .threadblock.is-sticky {
     background-color: var(--thread-bg-sticky)!important;
 }
+
 body.page-forum .threadlistsection .threadblock.is-sticky:nth-child(even) {
     background-color: var(--thread-bg-sticky2)!important;
 }
+
 body.page-forum .threadlistsection .threadblock.is-sticky A {
     color: var(--text-color);
 }
+
 body.page-forum .threadlistsection .threadblock.is-sticky {
     color: var(--text-dim-color);
 }
+
+
 /*New Post indicator*/
 
 body.page-forum .threadlistsection .threadblock .threadmain a.newposts {
     background-color: var(--accent);
     color: var(--accent-text);
 }
+
 body.page-forum .threadlistsection .threadblock .threadmain a.newposts:hover {
     background-color: var(--accent-hover);
 }
+
+
 /*Post head*/
 
 body.page-forum .threadviewsection .postblock .posthead {
     color: var(--text-dim-color);
 }
+
 body.page-forum .threadviewsection .postblock .posthead a,
 body.page-forum .threadviewsection .postblock .posthead strong {
     color: var(--text-dim-color);
 }
+
+
 /*new posts*/
 
-body.page-forum .threadviewsection .postblock > li.postuser {
+body.page-forum .threadviewsection .postblock>li.postuser {
     background-color: rgba(25, 49, 68, 0.5);
     border-left: 2px var(--accent) solid;
 }
-body.page-forum .threadviewsection .postblock-read > li.postuser {
+
+body.page-forum .threadviewsection .postblock-read>li.postuser {
     background-color: rgba(158, 158, 158, 0.11);
     border-left: 2px var(--thread-bg) solid;
 }
-body.page-forum .threadviewsection .postblock-own > li.postuser {
+
+body.page-forum .threadviewsection .postblock-own>li.postuser {
     background-color: rgba(134, 130, 0, 0.11);
     border-left: 2px var(--accent) solid;
 }
-body.page-forum .threadviewsection .postblock-own.postblock-read > li.postuser {
+
+body.page-forum .threadviewsection .postblock-own.postblock-read>li.postuser {
     background-color: rgba(134, 130, 0, 0.11);
     border-left: 2px #868200 solid;
 }
-body.page-forum .threadviewsection .postblock-reply > li.postuser {
+
+body.page-forum .threadviewsection .postblock-reply>li.postuser {
     background-color: rgba(158, 158, 158, 0.11);
     border: none;
 }
+
+
 /*in thread title*/
 
 .title {
     color: var(--text-color);
 }
+
+
 /*===== Navbar =====*/
 
 .navbar.is-primary {
     background-color: var(--thread-bg);
 }
-.navbar-brand > a.navbar-item:hover {
+
+.navbar-brand>a.navbar-item:hover {
     background-color: var(--accent);
 }
+
+
 /*===== Footer =====*/
 
 .footer {
