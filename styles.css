@@ -92,6 +92,15 @@ strong {
 .dropdown .dropdown-menu .has-link .dropdown-content a:hover {
     color: var(--text-color)!important;
 }
+.navbar-alerts .alert-dropdown .alert-item > a {
+    color: var(--text-color);
+}
+.navbar-alerts .alert-dropdown .alert-item > a:hover {
+    background-color: var(--accent);
+}
+.navbar-alerts .alert-dropdown .alert-item.alert-seen {
+    background-color: var(--thread-bg);
+}
 /*===== SubForum Main Page =====*/
 
 body.page-forum .forumhead ul .content .title a {
