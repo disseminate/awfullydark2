@@ -2,11 +2,13 @@
     --accent: #2196f3;
     --accent-hover: #003a69;
     --accent-text: #63ffff;
+    --accent-secondary: #9b761e;
     --thread-bg: #303030;
     --thread-bg2: #303030;
     --thread-bg-read: #1c1c1c;
     --thread-bg-sticky: #572121;
     --thread-bg-sticky2: #573521;
+    --thread-separator: #202020;
     --text-color: #dadada;
     --text-dim-color: #7d7d7d;
     /* Backgrounds */
@@ -155,6 +157,10 @@ body.page-forum .forumhead ul .content .subtitle a {
 
 /*Normal threads*/
 
+body.page-forum .threadlistsection .threadblock {
+    box-shadow: inset 0px 1px 0px var(--thread-separator);
+}
+
 body.page-forum .forumpanel {
     background-color: var(--thread-bg);
 }
@@ -207,6 +213,20 @@ body.page-forum .threadlistsection .threadblock .threadmain a.newposts {
 
 body.page-forum .threadlistsection .threadblock .threadmain a.newposts:hover {
     background-color: var(--accent-hover);
+}
+
+
+/* Read thread with no new posts: gets a border to the left */
+
+ul.threadblock.forumpanel.has-seen {
+    box-shadow: inset 2px 0px 0px var(--accent-secondary);
+}
+
+
+/* Read thread with new posts: gets a border to the left */
+
+ul.threadblock.forumpanel.has-seen.has-new-posts {
+    box-shadow: inset 2px 0px 0px var(--accent);
 }
 
 
