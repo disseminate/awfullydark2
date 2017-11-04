@@ -305,3 +305,8 @@ body.page-forum .threadviewsection .postblock-reply>li.postuser {
 .footer {
     background-color: var(--thread-bg);
 }
+
+/*===== New Post ===== */
+.ql-container {
+    border: 1px dotted rgba(255, 255, 255, 0.3);
+}
